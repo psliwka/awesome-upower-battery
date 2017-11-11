@@ -53,7 +53,7 @@ function upower_battery.factory(args)
 			bat_now.time = "N/A"
 		end
 		widget = bat.widget
-		settings()
+		settings(bat_now, widget)
 	end
 
 	upower_battery.display_device = upower.Client():get_display_device()
